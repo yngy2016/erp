@@ -9,4 +9,5 @@ public class Emp implements java.io.Serializable
 		this.Empno = Empno;
 		this.ename = ename;
 	}
+
 }
