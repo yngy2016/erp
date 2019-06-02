@@ -5,4 +5,5 @@ import java.util.List;
 public class Admin
 {
 	private List<Emp> emp;
+	private String Aname;
 }

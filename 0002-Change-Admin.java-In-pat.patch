@@ -1,0 +1,70 @@
+From db82452c60f8d94834691617a1cffd8fc4f8f3fd Mon Sep 17 00:00:00 2001
+From: gaoyan <gaoyan2269904451@qq.com>
+Date: Sun, 2 Jun 2019 17:54:50 +0800
+Subject: [PATCH 2/2] Change Admin.java In pat
+
+---
+ Admin.java |  1 +
+ patch      | 39 ---------------------------------------
+ 2 files changed, 1 insertion(+), 39 deletions(-)
+ delete mode 100644 patch
+
+diff --git a/Admin.java b/Admin.java
+index 2ce87b4..094ac6d 100644
+--- a/Admin.java
++++ b/Admin.java
+@@ -5,4 +5,5 @@ import java.util.List;
+ public class Admin
+ {
+ 	private List<Emp> emp;
++	private String ename;
+ }
+\ No newline at end of file
+diff --git a/patch b/patch
+deleted file mode 100644
+index 9ec3838..0000000
+--- a/patch
++++ /dev/null
+@@ -1,39 +0,0 @@
+-diff --git a/Emp.java b/Emp.java
+-index d4ae1fa..bed9328 100644
+---- a/Emp.java
+-+++ b/Emp.java
+-@@ -4,10 +4,11 @@ public class Emp implements java.io.Serializable
+- {
+- 	private Integer EmpNo;
+- 	private String ename;
+-+	private String username;
+-+	private String password;
+- 
+- 	public Emp(Integer EmpNo,String ename){
+--		this.Empno = Empno;
+-+		this.EmpNo = EmpNo;
+- 		this.ename = ename;
+- 	}
+--
+- }
+-\ No newline at end of file
+-diff --git a/Hello.java b/Hello.java
+-index c76e99b..66e8519 100644
+---- a/Hello.java
+-+++ b/Hello.java
+-@@ -7,9 +7,10 @@ public class Test
+- 		System.out.println("管理员操作"+admin);
+- 		Emp emp = new Emp();
+- 		System.out.println("员工信息："+emp);
+--		System.out.println("员工信息："+emp);
+--		System.out.println("员工信息："+emp);
+--		System.out.println("员工信息："+emp);
+--	
+-+		System.out.println("Hello Git !!!!");
+-+		//System.out.println("Hello Git !!!!");
+-+		//System.out.println("Hello World !!!!");
+-+		System.out.println("Hello World !!!!");
+-+		System.out.println("Hello World !!!!");
+- 	}
+- }
+-\ No newline at end of file
+-- 
+2.21.0.windows.1
+

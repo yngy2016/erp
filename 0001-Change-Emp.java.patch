@@ -1,0 +1,99 @@
+From ab20c0490d99dc0df461ae12c537fd1beb58df2d Mon Sep 17 00:00:00 2001
+From: gaoyan <gaoyan2269904451@qq.com>
+Date: Sun, 2 Jun 2019 17:42:33 +0800
+Subject: [PATCH 1/2] Change Emp.java
+
+---
+ Emp.java   |  8 +++-----
+ Hello.java |  9 +++++----
+ patch      | 39 +++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 47 insertions(+), 9 deletions(-)
+ create mode 100644 patch
+
+diff --git a/Emp.java b/Emp.java
+index d4ae1fa..b0d1f95 100644
+--- a/Emp.java
++++ b/Emp.java
+@@ -4,10 +4,8 @@ public class Emp implements java.io.Serializable
+ {
+ 	private Integer EmpNo;
+ 	private String ename;
++	private String username;
++	private String password;
+ 
+-	public Emp(Integer EmpNo,String ename){
+-		this.Empno = Empno;
+-		this.ename = ename;
+-	}
+-
++	
+ }
+\ No newline at end of file
+diff --git a/Hello.java b/Hello.java
+index c76e99b..66e8519 100644
+--- a/Hello.java
++++ b/Hello.java
+@@ -7,9 +7,10 @@ public class Test
+ 		System.out.println("管理员操作"+admin);
+ 		Emp emp = new Emp();
+ 		System.out.println("员工信息："+emp);
+-		System.out.println("员工信息："+emp);
+-		System.out.println("员工信息："+emp);
+-		System.out.println("员工信息："+emp);
+-	
++		System.out.println("Hello Git !!!!");
++		//System.out.println("Hello Git !!!!");
++		//System.out.println("Hello World !!!!");
++		System.out.println("Hello World !!!!");
++		System.out.println("Hello World !!!!");
+ 	}
+ }
+\ No newline at end of file
+diff --git a/patch b/patch
+new file mode 100644
+index 0000000..9ec3838
+--- /dev/null
++++ b/patch
+@@ -0,0 +1,39 @@
++diff --git a/Emp.java b/Emp.java
++index d4ae1fa..bed9328 100644
++--- a/Emp.java
+++++ b/Emp.java
++@@ -4,10 +4,11 @@ public class Emp implements java.io.Serializable
++ {
++ 	private Integer EmpNo;
++ 	private String ename;
+++	private String username;
+++	private String password;
++ 
++ 	public Emp(Integer EmpNo,String ename){
++-		this.Empno = Empno;
+++		this.EmpNo = EmpNo;
++ 		this.ename = ename;
++ 	}
++-
++ }
++\ No newline at end of file
++diff --git a/Hello.java b/Hello.java
++index c76e99b..66e8519 100644
++--- a/Hello.java
+++++ b/Hello.java
++@@ -7,9 +7,10 @@ public class Test
++ 		System.out.println("管理员操作"+admin);
++ 		Emp emp = new Emp();
++ 		System.out.println("员工信息："+emp);
++-		System.out.println("员工信息："+emp);
++-		System.out.println("员工信息："+emp);
++-		System.out.println("员工信息："+emp);
++-	
+++		System.out.println("Hello Git !!!!");
+++		//System.out.println("Hello Git !!!!");
+++		//System.out.println("Hello World !!!!");
+++		System.out.println("Hello World !!!!");
+++		System.out.println("Hello World !!!!");
++ 	}
++ }
++\ No newline at end of file
+-- 
+2.21.0.windows.1
+
