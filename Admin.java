@@ -8,5 +8,7 @@ public class Admin
 	private String Aname;
 	private String pwd;
 	private String name;
+	private List<Emp> emp;
+	private String Aname;
 	
 }
